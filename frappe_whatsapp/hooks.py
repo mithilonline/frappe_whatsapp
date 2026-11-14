@@ -219,3 +219,13 @@ doc_events = {
         "on_update_after_submit": "frappe_whatsapp.utils.run_server_script_for_doc_event"
     }
 }
+
+# Pavico: show WhatsApp as an app tile on the ERP Desktop, opening the messages list
+add_to_apps_screen = [
+	{
+		"name": "frappe_whatsapp",
+		"logo": "/assets/frappe_whatsapp/images/whatsapp-tile.svg",
+		"title": "WhatsApp",
+		"route": "/desk/whatsapp-message",
+	}
+]
